@@ -57,7 +57,7 @@ void breakIntoPieces(vector<int> &arr, int low, int high)
 int main()
 {
 
-    vector<int> arr = {4, 1, 4, 2, 6, 9, 0, -1};
+    vector<int> arr = {2, 4, 3, 5, 1};
     // 4 + 2 + 3 + 2 + 2 +2 +1 =16
     breakIntoPieces(arr, 0, arr.size() - 1);
     for (auto &val : arr)
