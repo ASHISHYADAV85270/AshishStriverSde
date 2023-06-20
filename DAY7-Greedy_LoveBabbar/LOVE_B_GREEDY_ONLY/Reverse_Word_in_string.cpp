@@ -8,10 +8,10 @@ string reverseWords(string S)
 
     for (int i = S.length() - 1; i >= 0; i--)
     {
-        if (S[i] == ' ')
+        if (S[i] == '.')
         {
             reverse(temp.begin(), temp.end());
-            ans = ans + temp + " ";
+            ans = ans + temp + ".";
             temp = "";
         }
         else
@@ -21,6 +21,7 @@ string reverseWords(string S)
     }
     reverse(temp.begin(), temp.end());
     ans = ans + temp;
+
     return ans;
 }
 int main()
